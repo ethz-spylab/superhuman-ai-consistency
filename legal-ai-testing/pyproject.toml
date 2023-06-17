@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name="legal_testing"
+version="0.1dev"
+description=""
+requires-python = ">=3.8"
+dependencies = [
+    "datasets==2.10.1",
+    "evaluate==0.4.0",
+    "highlight-text==0.2",
+    "matplotlib==3.7.1",
+    "openai==0.27.4",
+    "scikit-learn==1.2.2",
+    "tiktoken==0.3.3",
+    "torch==2.0.0",
+    "transformers==4.26.1",
+    "wandb==0.14.0",
+]
+
+[tool.setuptools]
+packages = ["legal_testing"]
+
+[tool.black]
+line-length = 100 
+target-version = ['py38']
+include = '\.pyi?$'
+experimental-string-processing = true

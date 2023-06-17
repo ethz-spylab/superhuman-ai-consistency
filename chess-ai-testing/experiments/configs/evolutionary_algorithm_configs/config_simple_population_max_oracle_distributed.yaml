@@ -1,0 +1,26 @@
+General:
+  config_type: 
+  data_path: /data/chess-data/no_pawns_positions_large_synthetic.txt
+  num_runs_per_config: 6
+  num_workers: 8
+  num_generations: 20
+  population_size: 1000
+  probability_decay: False
+  early_stopping: True
+  early_stopping_value: 1.01
+  mutation_probability : 1
+  crossover_probability : 1
+  max_num_fitness_evaluations: 100000
+
+Mutator:
+  mutation_strategy : one_random
+  minimum_probability : 0.01
+
+Crossover:
+  crossover_strategy : one_random
+  minimum_probability : 0.01
+
+Selector:
+  selection_strategy: all
+
+Operators: !include operator_configs/importance_weights_board_transformations.yaml

@@ -1,0 +1,4 @@
+Extract the 'llm_forecasting_data.tar.gz' here.
+
+The data file can be found in the release files:
+https://github.com/ethz-privsec/superhuman-ai-consistency/releases/tag/v1.0.0

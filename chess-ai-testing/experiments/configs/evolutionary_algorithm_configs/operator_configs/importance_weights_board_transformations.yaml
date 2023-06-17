@@ -1,0 +1,39 @@
+# Mutation functions
+# All names must contain the keyword "mutate"
+global_mutate_kwargs:
+  retries: 10
+  check_game_not_over : True
+  check_undefended_attacked_pieces : True
+  clear_fitness_values : True
+mutate_flip_board:
+  weight: 0.1
+mutate_move_one_piece:
+  weight: 0.15
+mutate_move_one_piece_adjacent:
+  weight: 0.2
+mutate_move_one_piece_legal_no_taking:
+  weight: 0.15
+mutate_player_to_move:
+  weight: 0.08
+mutate_rotate_board:
+  weight: 0.02
+mutate_substitute_one_piece_per_color:
+  weight: 0.3
+
+# Crossover functions
+# All names must contain the keyword "crossover"
+global_crossover_kwargs:
+  retries: 5
+  check_game_not_over : True
+  clear_fitness_values : True
+  check_undefended_attacked_pieces : True
+crossover_exchange_piece_pairs:
+  weight: 1.0
+
+# Selection functions
+# All names must contain the keyword "select"
+select_tournament_fast:
+  weight: 1.0
+  kwargs:
+    tournament_fraction : 0.1
+    is_bigger_better: True

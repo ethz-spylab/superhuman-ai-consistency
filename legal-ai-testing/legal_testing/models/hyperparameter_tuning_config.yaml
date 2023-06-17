@@ -1,0 +1,24 @@
+program: legal_testing/models/bert_echr_only_head.py
+method: bayes
+parameters:
+  num_runs_per_config:
+    value: 5
+  num_epochs:
+    values: [3,4,5,6,7]
+  batch_size:
+    values: [1,8,16,32,64]
+  learning_rate:
+    values: [0.00001, 0.0001, 0.001, 0.01, 0.1]
+  learning_rate_warmup_steps:
+    values: [0, 100, 500, 1000]
+name: bert_head_finetuning
+description: "Predicting whether a human right law has been violated"
+metric:
+  name: f1_test_avg
+  goal: maximize
+  target: 0.9
+command:
+  - ${env}
+  - ${interpreter}
+  - ${program}
+project: legal-testing
