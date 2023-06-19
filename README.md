@@ -2,7 +2,7 @@
 
 ![main figure](./docs/main_figure.png "Testing the consistency of superhuman AI via consistency checks")
 
-This repository contains the code for the paper [Evaluating Superhuman Models with Consistency Checks](https://arxiv.org/TODO) by [Lukas Fluri](https://www.linkedin.com/in/lukas-fluri-0b4721112), [Daniel Paleka](https://danielpaleka.com/), and [Florian Tramèr](https://floriantramer.com/).
+This repository contains the code for the paper [Evaluating Superhuman Models with Consistency Checks](https://arxiv.org/abs/2306.09983) by [Lukas Fluri](https://www.linkedin.com/in/lukas-fluri-0b4721112), [Daniel Paleka](https://danielpaleka.com/), and [Florian Tramèr](https://floriantramer.com/).
 
 ## tl;dr
 If machine learning models were to achieve *superhuman* abilities at various reasoning or decision-making tasks,
@@ -66,4 +66,4 @@ In particular, we show violations of the following consistency constraints:
 ways of “ranking” different outcomes. We consider an extreme example here, where we test whether
 a bail-decision model could favorably switch its decision if the defendant commits more crimes.
 
-The code for our experiments is available in the [legal-ai-testing](./legal-ai-testing) directory. The data files are available in [release v1.0.0](https://github.com/ethz-privsec/superhuman-ai-consistency/releases/tag/v1.0.0)..
+The code for our experiments is available in the [legal-ai-testing](./legal-ai-testing) directory. The data files are available in [release v1.0.0](https://github.com/ethz-privsec/superhuman-ai-consistency/releases/tag/v1.0.0).
